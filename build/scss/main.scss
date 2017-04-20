@@ -2,6 +2,7 @@
 @import "components/vars.scss";
 @import "components/normalize.scss";
 @import "components/fonts.scss";
+@import "components/icons.scss";
 
 *:focus::-webkit-input-placeholder {color: transparent}
 *:focus::-moz-placeholder          {color: transparent}
@@ -9,21 +10,21 @@
 *:focus:-ms-input-placeholder      {color: transparent}
 
 *::-webkit-input-placeholder {
-	color: #000;
-	opacity: 1;
+	color: #fff;
+	opacity: .7;
 }
 *:-moz-placeholder {
-	color: #000;
-	opacity: 1;
+	color: #fff;
+	opacity: .7;
 }
 *::-moz-placeholder {
-	color: #000;
-	opacity: 1;
+	color: #fff;
+	opacity: .7;
 }
 
 *:-ms-input-placeholder {
-	color: #000;
-	opacity: 1;
+	color: #fff;
+	opacity: .7;
 }
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -86,12 +87,10 @@ a {
 	background-image: linear-gradient(
 		to top, #ffa800, rgba(255, 255, 255, 0)
 	);
-	box-shadow: 0 2.8rem 6rem 0 transparentize(#502f07, .76);
 	border-radius: 3rem;
 	text-align: center;
 	transition: all .5s ease;
 	&:hover, &:active, &:focus {
-		box-shadow: 0 1.4rem 3rem 0 transparentize(#502f07, .76);
 		background-color: $accent-color;
 	}
 }
@@ -115,13 +114,17 @@ a {
 //Custom Styles Here
 @import "components/header.scss";
 @import "components/production.scss";
+@import "components/information.scss";
+@import "components/about.scss";
+@import "components/selection.scss";
+
 
 //ALWAYS END
 //@import "components/media.scss";
 
 //Load Libs SASS
 //@import "html/libs/animate/animate.sass";
-@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+@import "html/libs/Swiper/dist/css/swiper.min.css";
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
