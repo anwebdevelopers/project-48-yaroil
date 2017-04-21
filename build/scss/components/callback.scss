@@ -1,0 +1,65 @@
+.callback {
+
+}
+.callback__container {
+
+}
+.callback__box {
+    padding: 16.5rem 17% 18rem 17%;
+    background-image: url(../img/bg-callback.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.callback__title {
+    color: $main-color;
+    text-align: center;
+}
+.callback__undertitle {
+    margin: 5rem 0 0 0;
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 800;
+    text-align: center;
+}
+.callback__text {
+    margin: 2rem 0 0 0;
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: center;
+}
+.callback__button {
+    margin: 5rem 0 0 0;
+    text-align: center;
+}
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .callback__box {
+        padding: 6rem 3%;
+        background-image: none;
+        border: 1rem solid $main-color;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

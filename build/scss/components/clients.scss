@@ -1,0 +1,118 @@
+.clients {
+    padding: 8rem 0;
+}
+.clients__title {
+    color: $main-color;
+    text-align: center;
+}
+.clients__slider {
+    position: relative;
+    margin: 5rem 0 0 0;
+    padding: 0 14%;
+    &.owl-carousel {
+        .owl-dots {
+            text-align: center;
+            .owl-dot {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin: 0 1rem;
+                border-radius: 50%;
+                background-color: #72718b;
+                opacity: 1;
+                transition: all.5s ease;
+                &:hover, &:active, &:focus {
+                    background-color: $accent-color;
+                }
+                &.active {
+                    background-color: $main-color;
+                }
+            }
+        }
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border-top: 2px solid $main-color;
+            border-right: 2px solid $main-color;
+            transition: all.5s ease;
+            &:hover, &:active, &:focus {
+                border-color: $accent-color;
+            }
+            &.disabled {
+                border-color: #72718b;
+            }
+        }
+        .owl-prev {
+            transform: translateY(-50%) rotate(-135deg);
+            left: 0;
+        }
+        .owl-next {
+            transform: translateY(-50%) rotate(45deg);
+            right: 0;
+        }
+    }
+}
+.clients__item {
+    margin: 0 0 6rem 0;
+}
+.clients__item-name {
+    margin: 0;
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 800;
+    text-align: center;
+}
+.clients__item-position {
+    margin: 0;
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+}
+.clients__item-text {
+    margin: 4rem 0 0 0;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .clients__slider {
+        padding: 0;
+        &.owl-carousel {
+            .owl-next,
+            .owl-prev {
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

@@ -77,8 +77,9 @@ a {
 .button {
 	@include btn;
 	position: relative;
-	padding: 1.5rem 4rem;
-	font-size: 1.9rem;
+	padding: 2.5rem 5rem;
+	border-radius: 5rem;
+	font-size: 2.4rem;
     line-height: 1;
     font-weight: 400;
 	font-family: 'Circe', sans-serif;
@@ -87,17 +88,16 @@ a {
 	background-image: linear-gradient(
 		to top, #ffa800, rgba(255, 255, 255, 0)
 	);
-	border-radius: 3rem;
 	text-align: center;
 	transition: all .5s ease;
 	&:hover, &:active, &:focus {
 		background-color: $accent-color;
 	}
 }
-.button_big {
-	padding: 2.5rem 5rem;
-	border-radius: 5rem;
-	font-size: 2.4rem;
+.button_small {
+	padding: 1.5rem 4rem;
+	font-size: 1.9rem;
+	border-radius: 3rem;
 }
 
 
@@ -117,6 +117,11 @@ a {
 @import "components/information.scss";
 @import "components/about.scss";
 @import "components/selection.scss";
+@import "components/consult.scss";
+@import "components/scheme.scss";
+@import "components/callback.scss";
+@import "components/clients.scss";
+@import "components/gallery.scss";
 
 
 //ALWAYS END
@@ -124,7 +129,8 @@ a {
 
 //Load Libs SASS
 //@import "html/libs/animate/animate.sass";
-@import "html/libs/Swiper/dist/css/swiper.min.css";
+@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css";
+//@import "html/libs/Swiper/dist/css/swiper.min.css";
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
