@@ -116,19 +116,20 @@ a {
 @import "components/production.scss";
 @import "components/information.scss";
 @import "components/about.scss";
-@import "components/selection.scss";
+@import "components/advantages.scss";
 @import "components/consult.scss";
 @import "components/scheme.scss";
 @import "components/callback.scss";
 @import "components/clients.scss";
 @import "components/gallery.scss";
+@import "components/footer.scss";
 
 
 //ALWAYS END
 //@import "components/media.scss";
 
 //Load Libs SASS
-//@import "html/libs/animate/animate.sass";
+@import "html/libs/animate/animate.sass";
 @import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css";
 //@import "html/libs/Swiper/dist/css/swiper.min.css";
 //@import "html/libs/superfish/dist/css/superfish";

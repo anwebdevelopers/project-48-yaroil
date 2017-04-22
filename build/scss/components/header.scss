@@ -238,6 +238,11 @@
     .container {
         max-width: 768px;
     }
+    .header,
+    .header__container {
+        display: block;
+        min-height: auto;
+    }
     .header__top {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -283,10 +288,6 @@
 }
 
 @media only screen and (max-width : 480px) {
-    .header,
-    .header__container {
-        display: block;
-    }
     .header__top {
         display: block;
     }

@@ -81,6 +81,12 @@
             right: -22%;
         }
     }
+    &:nth-child(3n-1) {
+        animation-delay: .25s;
+    }
+    &:nth-child(3n) {
+        animation-delay: .5s;
+    }
 }
 
 @media only screen and (max-width : 1400px) {

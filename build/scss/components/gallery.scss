@@ -1,4 +1,6 @@
 .gallery {
+    position: relative;
+    z-index: 1;
     padding: 8rem 0 0 0;
 }
 .gallery__container {
@@ -15,9 +17,9 @@
         position: relative;
         padding: 0 4rem;
         .owl-stage {
-            //display: flex;
+            display: flex;
             .owl-item {
-                //display: flex;
+                display: flex;
                 .gallery__item {
                     width: auto;
                     min-height: 40rem;
@@ -138,7 +140,7 @@
         &.owl-carousel {
             padding: 0;
             .owl-nav {
-                margin: 4rem 0 0 0;
+                margin: 6rem 0 0 0;
                 text-align: center;
                 .owl-next,
                 .owl-prev {

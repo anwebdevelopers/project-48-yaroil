@@ -23,6 +23,18 @@
     width: 29.33%;
     margin: 0 2% 5rem 2%;
     text-align: center;
+    &:nth-child(3n-1) {
+        .about__item-icon,
+        .about__item-text {
+            animation-delay: .25s;
+        }
+    }
+    &:nth-child(3n) {
+        .about__item-icon,
+        .about__item-text {
+            animation-delay: .5s;
+        }
+    }
 }
 .about__item-icon {
     margin: 0;

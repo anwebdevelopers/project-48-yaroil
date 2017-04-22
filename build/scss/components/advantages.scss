@@ -1,36 +1,45 @@
-.selection {
+.advantages {
     padding: 8rem 0 21rem 0;
     background-color: $main-color;
-    background-image: url(../img/bg-selection.jpg);
+    background-image: url(../img/bg-advantages.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
 }
-.selection__title {
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+      .advantages {
+          background-attachment: scroll;
+      }
+}
+.advantages__title {
     color: #fff;
     text-align: center;
 }
-.selection__box {
+.advantages__box {
     margin: 11rem 0 0 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
-.selection__item {
+.advantages__item {
     position: relative;
     flex: 0 1 auto;
     width: 40%;
     margin: 0 5% 11rem 5%;
     padding: 0 0 0 10rem;
+    &:nth-child(even) {
+        animation-delay: .25s;
+    }
 }
-.selection__item-icon {
+.advantages__item-icon {
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
 }
-.selection__item-title {
+.advantages__item-title {
     margin: 0;
     font-size: 2.4rem;
     line-height: 1.6;
@@ -38,7 +47,7 @@
     text-transform: uppercase;
     color: #fff;
 }
-.selection__item-text {
+.advantages__item-text {
     margin: 4rem 0 0 0;
     font-size: 2.4rem;
     line-height: 1.4;
@@ -54,7 +63,10 @@
 }
 
 @media only screen and (max-width : 992px) {
-    .selection__item {
+    .advantages {
+        background-attachment: scroll;
+    }
+    .advantages__item {
         width: 48%;
         margin: 0 0 11rem 4%;
         &:nth-child(odd) {
@@ -68,24 +80,22 @@
 }
 
 @media only screen and (max-width : 640px) {
-    .selection__item {
+    .advantages__item {
         padding: 8rem 0 0 0;
         text-align: center;
     }
-    .selection__item-icon {
+    .advantages__item-icon {
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
 @media only screen and (max-width : 480px) {
-    .selection {
-        background-attachment: scroll;
-    }
-    .selection__box {
+
+    .advantages__box {
         display: block;
     }
-    .selection__item {
+    .advantages__item {
         width: auto;
         margin: 0 0 11rem 0;
     }
